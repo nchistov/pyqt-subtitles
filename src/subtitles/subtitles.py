@@ -28,6 +28,7 @@ class PyQtSubtitles:
                 self._current_track = self._tracks[index]
 
     def get_current_track(self) -> int:
+        """Get current track index, if no track is set, will return -1"""
         if self._current_track is None:
             return -1
         else:
