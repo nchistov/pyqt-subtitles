@@ -1,4 +1,4 @@
 .idea
 .venv
 __pycache__
-pyqt-subtitles.iml
+src/pyqt_subtitles.egg-info
