@@ -4,8 +4,23 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pyqt-subtitles"
-version = "1.0a"
+version = "1.0"
 dependencies = [
     "PyQt6",
     "srt",
 ]
+authors = [
+    { name="Nickolay Chistov", email="nickolaychistov@gmail.com" },
+]
+description = "Python library for adding srt subtitles into QMediaPlayer"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICENSE"]
+
+[project.urls]
+Homepage = "https://github.com/nchistov/pyqt-subtitles"
+Issues = "https://github.com/nchistov/pyqt-subtitles/issues"
