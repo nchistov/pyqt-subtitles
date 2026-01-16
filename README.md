@@ -4,7 +4,7 @@
 ### Installing
 
 ```shell
-pip install git+https://github.com/nchistov/pyqt-subtitles.git@latest
+pip install git+https://github.com/nchistov/pyqt-subtitles.git@1.0
 ```
 
 ### Simple example

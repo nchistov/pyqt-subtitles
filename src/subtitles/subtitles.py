@@ -27,7 +27,7 @@ class PyQtSubtitles:
                 self._media_player.setActiveSubtitleTrack(-1)  # Disable video built-in subtitles
                 self._current_track = self._tracks[index]
 
-    def get_current_track(self):
+    def get_current_track(self) -> int:
         if self._current_track is None:
             return -1
         else:
