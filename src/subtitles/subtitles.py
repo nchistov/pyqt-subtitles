@@ -12,12 +12,12 @@ class PyQtSubtitles:
 
         self._media_player.positionChanged.connect(self._position_changed)
 
-    def _position_changed(self, position):
+    def _position_changed(self, position: int):
         if self._current_track is not None:
             self._media_player.videoSink().setSubtitleText(self._current_track.get_subtitle(position))
 
     def set_current_track(self, index: int):
-        """Set current track index, if index is -1 or less, current track will be None"""
+        """Sets current track index, if index is -1 or less, current track will be None"""
         if index < 0:
             self._current_track = None
         else:
@@ -28,8 +28,16 @@ class PyQtSubtitles:
                 self._current_track = self._tracks[index]
 
     def get_current_track(self) -> int:
-        """Get current track index, if no track is set, will return -1"""
+        """Returns current track index, if no track is set, will return -1"""
         if self._current_track is None:
             return -1
         else:
             return self._tracks.index(self._current_track)
+
+    def add_track(self, subtitle_file: str):
+        """Adds new subtitle track. Warning: track won't set as default, you'll need to do this yourself"""
+        self._tracks.append(SubtitleTrack(subtitle_file))
+
+    def get_track_number(self) -> int:
+        """Returns number of added tracks"""
+        return len(self._tracks)
