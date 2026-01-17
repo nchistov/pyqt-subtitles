@@ -1,10 +1,10 @@
-# pyqt-subtitles 1.1
+# pyqt-subtitles 1.2
 ## Python library for adding srt subtitles into QMediaPlayer
 
 ### Installing
 
 ```shell
-pip install git+https://github.com/nchistov/pyqt-subtitles.git@1.1
+pip install git+https://github.com/nchistov/pyqt-subtitles.git@1.2
 ```
 
 ### Simple example
